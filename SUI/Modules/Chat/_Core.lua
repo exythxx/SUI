@@ -36,8 +36,7 @@ function Module:OnEnable()
           end
 
           frame:SetClampRectInsets(0, 0, 0, 0)
-         -- frame:SetMaxResize(UIParent:GetWidth(), UIParent:GetHeight())
-         -- frame:SetMinResize(250, 100)
+          frame:SetResizeBounds(250, 100, UIParent:GetWidth(), UIParent:GetHeight())
 
           local name = frame:GetName()
           _G[name .. "ButtonFrame"]:Hide()
