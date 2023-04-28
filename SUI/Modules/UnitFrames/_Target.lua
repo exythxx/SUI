@@ -14,6 +14,8 @@ function Module:OnEnable()
       self.healthbar.RightText:SetFont(STANDARD_TEXT_FONT, fontSize, "OUTLINE")
       self.manabar.LeftText:SetFont(STANDARD_TEXT_FONT, fontSize, "OUTLINE")
       self.manabar.RightText:SetFont(STANDARD_TEXT_FONT, fontSize, "OUTLINE")
+      self.healthbar.TextString:SetFont(STANDARD_TEXT_FONT, fontSize, 'OUTLINE')
+      self.manabar.TextString:SetFont(STANDARD_TEXT_FONT, fontSize, 'OUTLINE')
 
       if (db.unitframes.style == 'Big') then
           local classification = UnitClassification(self.unit);

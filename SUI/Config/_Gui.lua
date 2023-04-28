@@ -372,6 +372,8 @@ function Gui:OnEnable()
               local frames = { PlayerFrame, TargetFrame, FocusFrame }
 
               for _, frame in pairs(frames) do
+                frame.healthbar.TextString:SetFont(STANDARD_TEXT_FONT, slider.value, 'OUTLINE')
+                frame.manabar.TextString:SetFont(STANDARD_TEXT_FONT, slider.value, 'OUTLINE')
                 frame.healthbar.LeftText:SetFont(STANDARD_TEXT_FONT, slider.value, 'OUTLINE')
                 frame.healthbar.RightText:SetFont(STANDARD_TEXT_FONT, slider.value, 'OUTLINE')
                 frame.manabar.LeftText:SetFont(STANDARD_TEXT_FONT, slider.value, 'OUTLINE')
