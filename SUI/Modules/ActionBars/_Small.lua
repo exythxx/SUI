@@ -80,38 +80,14 @@ function Module:OnEnable()
 
       -- Pet Action Bar
       if (SHOW_MULTI_ACTIONBAR_2) then
-        if (playerClass == "Druid") then
-          PetActionButton1:ClearAllPoints()
-          PetActionButton1:SetPoint("BOTTOMLEFT", MultiBarBottomRightButton1, "TOPLEFT", 3, 11)
-        elseif (playerClass == "Death Knight") then
           PetActionButton1:ClearAllPoints()
           PetActionButton1:SetPoint("BOTTOMLEFT", MultiBarBottomRightButton1, "TOPLEFT", 150, 5)
-        else
-          PetActionButton1:ClearAllPoints()
-          PetActionButton1:SetPoint("BOTTOMLEFT", MultiBarBottomRightButton1, "TOPLEFT", 3, 11)
-        end
       elseif (SHOW_MULTI_ACTIONBAR_1) then
-        if (playerClass == "Druid") then
-          PetActionButton1:ClearAllPoints()
-          PetActionButton1:SetPoint("BOTTOMLEFT", MultiBarBottomRightButton1, "TOPLEFT", 3, -33)
-        elseif (playerClass == "Death Knight" or playerClass == "Paladin") then
           PetActionButton1:ClearAllPoints()
           PetActionButton1:SetPoint("BOTTOMLEFT", MultiBarBottomRightButton1, "TOPLEFT", 150, -35)
-        else
-          PetActionButton1:ClearAllPoints()
-          PetActionButton1:SetPoint("BOTTOMLEFT", MultiBarBottomRightButton1, "TOPLEFT", 3, -33)
-        end
       else
-        if (playerClass == "Druid") then
-          PetActionButton1:ClearAllPoints()
-          PetActionButton1:SetPoint("BOTTOMLEFT", MultiBarBottomRightButton1, "TOPLEFT", 3, -75)
-        elseif (playerClass == "Death Knight") then
           PetActionButton1:ClearAllPoints()
           PetActionButton1:SetPoint("BOTTOMLEFT", MultiBarBottomRightButton1, "TOPLEFT", 150, -73)
-        else
-          PetActionButton1:ClearAllPoints()
-          PetActionButton1:SetPoint("BOTTOMLEFT", MultiBarBottomRightButton1, "TOPLEFT", 3, -75)
-        end
       end
 
       -- Stance Bar
